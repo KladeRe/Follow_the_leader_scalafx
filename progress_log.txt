@@ -1,0 +1,40 @@
+Report 1:
+
+All parts of the program have either been completed or are in a working state. The Vector2D file defines methods for the Vector2D class sucha as Vector addition, multiplication,
+dot product etc. The Flock.scala defines all the methods that control the movement of the flock-members. Simulation.scala defines a class that holds all of
+the flock members including the leader. GUI.scala is responsible for taking care of the GUI. fileio.scala reads the file containing the initial positions of the
+flock members.
+
+Figures.scala includes all the visual objects such as circles, sliders etc. SharedVariables does exactly what the name says. It stores variables that are shared between files.
+Animate.scala takes care of the animation.
+
+There are some unit tests in src/test/scala for the filereading and movements of the flock members. The initial positions of the flock members are read from a data.json file in the directory:
+src/main/scala/FTL/data/data.json.
+
+I have been working on this project for quite some time already. If I had to estimate the time it took to get to this point I would say approximately 30 hours.
+
+If it isn't already clear enough, I am very far ahead of what I presented in the project plan. The reason for this is that I want to get the project
+ready as soon as possible so that I can concentrate on other courses. I will still continue making improvements though, but not at the same pace.
+
+Report 2:
+
+Not much has happened with this project during these two weeks. I don't really know how I should continue with this project so some advice would be nice.
+So my question is: Is the project good as it is or do I still need to add something? I'm doing the hardest difficulty.
+
+Report 3:
+
+Many things have been improved since the last report. The simulation can now run with at least 30 blobs in it. This is thanks to the performance improvements from
+switching to the RTree data structure for storing the positions of the blobs (I used arrays before that). The application now has a startup menu in which the user can
+select the file they want to read the data from. The user can quit the simulation and return to the startup menu. The blobs are now displayed as triangels meaning
+that the user can see in which direction they are heading. The fileio tests were also improved to make sure that in when the file has two blobs that have the same
+position, the application should raise an error. I have also tried to make the code more readable. The application is now started by running App.scala.
+
+All main components of the application have been completed. What remains is some tuning. 
+
+Here are some things I will probably improve upon:
+
+* Styling. The main menu looks very bland and boring and I will probably add some styling to it. 
+
+* Tests. I might add some unit tests to improve testing.
+
+* Performance improvements. If I find any ways to increase the performance of the application I will try to do it. But this is not the main priority now.
